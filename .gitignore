@@ -1,0 +1,62 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Secrets. Never relax these. The repo is PUBLIC.
+# ─────────────────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Local working material — deliberately not pushed (for now).
+# This is a decision, not an oversight. Flip a line to start publishing one.
+# Anything under these paths is invisible to the remote, so do not put work
+# here that you want reviewed by anyone but yourself.
+# ─────────────────────────────────────────────────────────────────────────────
+CLAUDE.md
+.claude/
+docs/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Language toolchains. Domains here do not share a runtime, so this covers all
+# of them — each task carries its own dependency manifest, which IS tracked.
+# ─────────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.next/
+.parcel-cache/
+
+# Go
+*.exe
+*.test
+*.out
+bin/
+vendor/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Run artifacts — traces and cost logs are regenerated, not source of truth.
+# Summarised findings belong in progress/ and reviews/, which ARE pushed.
+# ─────────────────────────────────────────────────────────────────────────────
+runs/
+*.log
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OS / editor
+# ─────────────────────────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp

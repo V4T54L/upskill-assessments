@@ -1,0 +1,11 @@
+# Google's unified GenAI SDK — the current one. Verify the install name and the
+# current free-tier limits against the official docs before relying on either:
+#   https://ai.google.dev/gemini-api/docs
+#   https://ai.google.dev/gemini-api/docs/rate-limits
+google-genai
+
+# Config
+python-dotenv
+
+# Add what you actually use, and nothing you don't. A dependency you cannot
+# justify in a review is a dependency you should not have.

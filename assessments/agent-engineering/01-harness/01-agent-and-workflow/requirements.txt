@@ -7,5 +7,9 @@ google-genai
 # Config
 python-dotenv
 
+# Structured design/action contracts and real browser verification.
+pydantic>=2,<3
+playwright
+
 # Add what you actually use, and nothing you don't. A dependency you cannot
 # justify in a review is a dependency you should not have.
